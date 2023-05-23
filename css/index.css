@@ -1,0 +1,137 @@
+ /* CSS styles for the navigation bar */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+ .navbar {
+    background-color: #3d3b3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+
+  
+}
+
+.navbar-logo {
+    color: #f2f2f2;
+    font-size: 24px;
+    margin-left: 8px;
+}
+
+.navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.navbar a:hover {
+    color: #cd621f;
+}
+
+.navbar a:hover::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: #cd621f;
+}
+
+.navbar .active {
+    color: #f2f2f2;
+    
+}
+.spn{
+    color: #cd621f;
+    font-weight: 700;
+}
+
+.img-avatar{
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 0;
+    overflow-y: 0;
+
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    text-align: center;
+    width: 100%;
+    
+}
+
+.content h1{
+    color: #3d3b3a;
+    font-size: 100px;
+    font-weight: 500;
+}
+.content p{
+    margin: 0.5rem;
+    color: #3d3b3a;
+    font-size: 25px;
+    
+}
+.content h1:hover{
+    color: #cd621f;
+}
+button{
+    width: 200px;
+    margin: 1.2rem 1.5rem;
+    padding: 0.8rem 1rem;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    box-shadow: inset 0 0 0 #cd621f;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+button:hover{
+    box-shadow: inset 200px 0 0 #cd621f ;
+}   
+
+/* CSS styles for the login and signup form */
+.form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}

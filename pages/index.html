@@ -1,0 +1,61 @@
+<?php
+// PHP code to handle form submission
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    
+    // Perform login authentication or signup logic here
+    // ...
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Bar with Login and Signup</title>
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+<link rel="icon" type="image/png" href="path/to/favicon.png">
+
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <section id="navbar">
+    <header>
+        <nav class="nav">
+        <div class="navbar">
+            <h1 class="navbar-logo">Estate<span class="spn">Guru</span></h1>
+            <div>
+                <a href="#">Home</a>
+                <a href="properties.html">Properties</a>
+                <a href="Agents.html">Agents</a>
+                <a href="About.html">About</a>
+                <a href="https://www.bizjournals.com/news/residential-real-estate" target="_blank">News</a>
+                <a href="Contact.html">Contact</a>
+                <a href="login.html">SignIn</a>
+                <a href="signup.html">SignUp</a>
+            </div>
+        </div>
+    </nav>
+    </header>
+</section>
+<section>
+<main>
+    <div class="container">
+        <img src="../images/home1.jpg" class="img-avatar" alt="home" id="main-pic">
+    </div>
+    <div class="content">
+        <h1>Estate Guru</h1>
+        <p>Welcome to Estate Guru<br>Your ultimate destination for all things real estate
+        <br>Explore our expertise and discover your perfect property today<br>  
+        <button>RENT</button>
+        <button>Purchase</button>  
+        </p>
+    </div>
+</main>
+</section>
+    
+    <!-- Content -->
+
+</body>
+</html>
