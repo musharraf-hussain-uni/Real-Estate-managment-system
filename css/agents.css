@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 14px;
 
   
 }
@@ -18,7 +18,7 @@
 .navbar-logo {
     color: #f2f2f2;
     font-size: 24px;
-    margin-left: 8px;
+    margin-right: 600px;
 }
 
 .navbar a {
@@ -52,3 +52,83 @@
     color: #cd621f;
     font-weight: 700;
 }
+.head {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.btn {
+    background-color: #cd621f;
+    color: #fff;
+    padding: 6px;
+    border-radius: 6px;
+    border: 2px solid #cd621f;
+}
+.btn:hover {
+    background-color: #cd621f00;
+    color: #cd621f;
+    border: 2px solid #cd621f;
+}
+.btn-hover {
+    background-color: #cd621f;
+    color: #fff !important;
+    border: 2px solid #cd621f;
+    padding: 6px;
+    border-radius: 6px;
+}
+.btn-hover:hover {
+    background-color: #cd621f00;
+    color: #cd621f !important;
+    padding: 6px;
+    border-radius: 6px;
+    border: 2px solid #cd621f;
+}
+
+/* Existing CSS styles for the navigation bar */
+
+/* Additional CSS styles */
+.agents-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    position: relative;
+    top: 100px; /* Adjust the top position as needed to create space below the navigation bar */
+  }
+  
+  /* Rest of the CSS styles for agents' information */
+  
+  
+  .agent {
+    text-align: center;
+  }
+  
+  .agent img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .agent h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .agent p {
+    margin: 5px 0;
+  }
+  
+  .contact-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #cd621f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-button:hover {
+    background-color: #a44d18;
+  }
+  

@@ -1,63 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign up</title>
     <link rel="stylesheet" href="../css/signup.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+
 </head>
+
 <body>
     <section id="navbar">
-        <header>
+        <header class="head">
             <nav class="nav">
-            <div class="navbar">
-                <h1 class="navbar-logo">Estate<span class="spn">Guru</span></h1>
-                <div>
-                    <a class="active" href="index.html">Home</a>
-                    <a href="properties.html">Properties</a>
-                    <a href="Agents.html">Agents</a>
-                    <a href="About.html">About</a>
-                    <a href="https://www.bizjournals.com/news/residential-real-estate" target="_blank">News</a>
-                    <a href="Contact.html">Contact</a>
-                    <a href="login.html">SignIn</a>
-                    <a href="signup.html">SignUp</a>
+                <div class="navbar">
+                    <img src="../images/logo.png" width="25px">
+                    <h1 class="navbar-logo">Estate<span class="spn">Guru</span></h1>
+                    <div>
+                        <a class="active" href="index.html">Home</a>
+                        <a href="properties.html">Properties</a>
+                        <a href="Agents.html">Agents</a>
+                        <a href="About.html">About</a>
+                        <a href="https://www.bizjournals.com/news/residential-real-estate" target="_blank">News</a>
+                        <a href="Contact.html">Contact</a>
+                        <a href="login.html" class="btn">SignIn</a>
+                        <a href="signup.html" class="btn-hover">SignUp</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
         </header>
     </section>
-    <main>
-        <div class="container">
+    <main class="main">
+        <!-- <div class="container">
             <img src="../images/home1.jpg" class="img-avatar" alt="home" id="main-pic">
+        </div> -->
+        <div class="container">
+            <h1 class="h1">SignUp</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address"></textarea>
+                <label for="Cnic">CNIC:</label>
+                <input type="Cnic" id="Cnic" name="Cnic" required></input>
+
+                <label for="program">Program:</label>
+                <select id="program" name="program">
+                    <option value="MAD">MobileApp Development.</option>
+                    <option value="WAD">WebApp Development</option>
+                    <option value="GD">Game Development</option>
+                </select>
+                <p>Have existing account? <a href="login.html">SignIn</a></p><br>
+                <input type="submit" value="Register">
+            </form>
         </div>
-    <div class="container">
-    <h1 class="h1">SignUp</h1>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required>
-        
-        <label for="address">Address:</label>
-        <textarea id="address" name="address"></textarea>
-        <label for="Cnic">CNIC:</label>
-        <input type="Cnic" id="Cnic" name="Cnic" required></input>
-        
-        <label for="program">Program:</label>
-        <select id="program" name="program">
-          <option value="MAD">MobileApp Development.</option>
-          <option value="WAD">WebApp Development</option>
-          <option value="GD">Game Development</option>
-        </select>
-        
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-</main>
+    </main>
 </body>
+
 </html>
