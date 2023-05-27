@@ -3,10 +3,9 @@
     padding: 0;
 }
 
-#navbar {
+.head {
     position: fixed;
     width: 100%;
-    z-index: 999;
 }
 
 .navbar {
@@ -55,10 +54,6 @@
     font-weight: 700;
 }
 
-.head {
-    position: fixed;
-    width: 100%;
-}
 
 .btn {
     background-color: #cd621f;
@@ -90,67 +85,103 @@
     border: 2px solid #cd621f;
 }
 
-.content-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 30px 20px;
-    grid-column-gap: 20px;
-    grid-row-gap: 30px;
-     /* Adjust the margin as needed */
+.contact-main {
+    top: 70px;
 }
-
-.image-container {
-    flex: 1;
-    margin-left: 20vh;
-    margin-top: 20vh; /* Adjust the margin as needed */
-}
-
-.image-container img{
-    width: 300%; /* Adjust the max-width as needed */
-    height: 200px;
-    object-fit: cover;
-    cursor: pointer;
-    border-radius: 9px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    transition: 0.2s ease;  
-}
-
-.image-container img:hover{
-    transform: scale(1.04);
-}
-.content-container {
-    margin-right: 100vh;
-    margin-top: 10vh;
-     /* Adjust the margin as needed */
-}
-
-.content-container h5 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #3d3b3a;
-}
-
-.content-container p {
-    font-size: 17px;
-    margin-bottom: 10px;
-    color: #3d3b3a;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-/* Previous CSS code */
-
-.learn-more {
-    display: inline-fl;
+h1{
+    text-align: center;
+    font-size: 70px;
     color: #cd621f;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    text-transform: uppercase;
-    font-size: 15px;
 }
-
-.learn-more:hover {
-text-decoration: underline;
+h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #cd621f;
 }
+p {
+    font-size: 18px;
+    color: #000000;
+}
+.main1{
+    background: url(../images/about1.png);
+    background-size: cover;
+    height: 55vh;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .description-container {
+    width: 70%;
+    margin-bottom: 15vh;
+  }
+  
+  .description-container h2 {
+    font-size: 30px;
+  }
+  
+  .contact-container {
+    width: 50%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(9, 5, 2, 0.5);
+    border-radius: 10px;
+  }
+  
+  .contact-container h3 {
+    font-size: 30px;
+    margin-bottom: 24px;
+}
+  
+  .contact-info li {
+    margin-bottom: 28px;
+text-align: center;
+font-size: 18px;
+}
+  
+  .social-icons {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .icon-link {
+    display: inline-block;
+    margin-right: 10px;
+    color: #cd621f;
+    
+  }
+  
 
+
+
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-logo {
+      margin-right: 0;
+    }
+  
+    .navbar a {
+      margin: 10px 0;
+    }
+  
+    .content h1 {
+      font-size: 70px;
+    }
+  
+    .content p {
+      font-size: 20px;
+    }
+  }
