@@ -40,3 +40,24 @@ let mainF = (e) => {
 }
 
 window.addEventListener("load", mainF);
+
+
+
+// script.js
+// Add event listener to the login button
+const loginButton = document.getElementById('login-button');
+loginButton.addEventListener('click', handleLogin);
+
+// Function to handle login functionality
+function handleLogin(event) {
+  event.preventDefault();
+
+  // Perform user authentication and validation here
+  // If the user is authenticated and validated, redirect to the user information page
+  const loginSuccess = true; // Replace with your authentication logic
+
+  if (loginSuccess) {
+    // Redirect to the user information page
+    window.location.href = 'user-profile.html';
+  }
+}
