@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/agents.css">
     <link rel="icon" type="image/png" href="../images/logo.png">
-
     <title>Agents</title>
 </head>
 
@@ -32,6 +31,7 @@
             </nav>
         </header>
     </section>
+    <!-- agents -->
     <section>
         <div class="agents-container">
             <div class="agent">
@@ -41,7 +41,10 @@
                     experienced real estate agent is your trusted guide for finding your dream home or<br>securing
                     lucrative rental opportunities in this sought-after neighborhood.</p>
                 <p class="p1">Contact: 0332-26220690</p>
-                <button class="contact-button">Contact Now</button>
+                <div class="button-container">
+                    <button class="contact-button">Contact Now</button>
+                    <button class="view-profile" id="view-profile1">View Profile</button>
+                </div>
             </div>
             <div class="agent">
                 <img src="../images/areb1.png" alt="Agent 2">
@@ -50,7 +53,10 @@
                     experienced real estate agent is your trusted guide for finding your dream home or<br>securing
                     lucrative rental opportunities in this sought-after neighborhood.</p>
                 <p class="p1">Contact: 0331-2201904</p>
-                <button class="contact-button">Contact Now</button>
+                <div class="button-container">
+                    <button class="contact-button">Contact Now</button>
+                    <button class="view-profile" id="view-profile2">View Profile</button>
+                </div>
             </div>
         </div>
         <div class="agents-container">
@@ -61,7 +67,10 @@
                     experienced real estate agent is your trusted guide for finding your dream home or<br>securing
                     lucrative rental opportunities in this sought-after neighborhood.</p>
                 <p class="p1">Contact: 0330-1244957</p>
-                <button class=" contact-button">Contact Now</button>
+                <div class="button-container">
+                    <button class="contact-button">Contact Now</button>
+                    <button class="view-profile" id="view-profile3">View Profile</button>
+                </div>
             </div>
             <div class="agent">
                 <img src="../images/daniyal 1.png" alt="Agent 2">
@@ -70,7 +79,10 @@
                     experienced real estate agent is your trusted guide for finding your dream home or<br>securing
                     lucrative rental opportunities in this sought-after neighborhood...</p>
                 <p class="p1">Contact: 0332-7392952</p>
-                <button class=" contact-button">Contact Now</button>
+                <div class="button-container">
+                    <button class="contact-button">Contact Now</button>
+                    <button class="view-profile" id="view-profile4">View Profile</button>
+                </div>
             </div>
         </div><br><br>
         <!-- Contact -->
@@ -94,7 +106,57 @@
         </section>
 
     </section>
-    <script src="../javascript/agent.js"></script>
+    <script>
+        // Get all the "Contact Now" buttons
+        const contactButtons = document.querySelectorAll('.contact-button');
+
+        // Attach event listeners to each button
+        contactButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const agentName = this.parentNode.querySelector('h3').innerText;
+                const agentContact = this.parentNode.querySelector('.p1').innerText.split(': ')[1];
+
+                // Show an alert box with the success message
+                alert(
+                    `YOUR Request Is SUCCESSFULLY Sent To ${agentContact} The Agent will Contact you soon!!`
+                );
+            });
+        });
+
+        // Get the "View Profile" button element
+        var viewProfileButton = document.getElementById('view-profile1');
+
+        // Add click event listener to the button
+        viewProfileButton.addEventListener('click', function () {
+            // Redirect to the agent's profile page
+            window.location.href = 'mh.html';
+        });
+
+        // Get the "View Profile" button element
+        var viewProfileButton = document.getElementById('view-profile2');
+
+        // Add click event listener to the button
+        viewProfileButton.addEventListener('click', function () {
+            // Redirect to the agent's profile page
+            window.location.href = 'areeb.html';
+        });
+        // Get the "View Profile" button element
+        var viewProfileButton = document.getElementById('view-profile3');
+
+        // Add click event listener to the button
+        viewProfileButton.addEventListener('click', function () {
+            // Redirect to the agent's profile page
+            window.location.href = 'shareeq.html';
+        });
+        // Get the "View Profile" button element
+        var viewProfileButton = document.getElementById('view-profile4');
+
+        // Add click event listener to the button
+        viewProfileButton.addEventListener('click', function () {
+            // Redirect to the agent's profile page
+            window.location.href = 'dani.html';
+        });
+    </script>
 </body>
 
 </html>

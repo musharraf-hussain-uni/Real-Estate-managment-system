@@ -139,8 +139,28 @@
     background-color: #a44d18;
   }
   
+.view-profile{
+  margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #cd621f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.view-profile:hover {
+  background-color: #a44d18;
+}
 
-  
+.button-container {
+  display: flex;
+}
+
+.contact-button,
+.view-profile {
+  margin-right: 10px; /* Adjust margin between buttons */
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;

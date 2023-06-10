@@ -305,7 +305,19 @@ color: #fff;
 
 .H3{
     font-size: 30px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15px;
 }
-
-
-  
+#viewagent{
+  background-color: #cd621f;
+    color: #fff;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+}
+#viewagent:hover{
+background-color: #8b4012;
+}

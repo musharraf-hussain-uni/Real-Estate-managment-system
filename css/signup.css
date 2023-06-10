@@ -95,7 +95,7 @@
   color: #cd621f;
   font-size: 100px;
   margin-left: 100vh;
-  margin-bottom: 10vh;
+  margin-bottom: 6vh;
 }
 form {
   max-width: 350px;
@@ -208,4 +208,11 @@ color: #fff;
     margin: 0.5rem;
     padding: 1rem 1rem;
     border-radius: 10rem;
+}
+.password-toggle {
+  position: inherit;
+  right: 15px;
+  top: 100%;
+
+  cursor: pointer;
 }

@@ -44,15 +44,16 @@
                     you. <br>We value your feedback and are committed to providing you with the support you need.
                     Whether <br>you have inquiries, encounter difficulties, or simply want to share your thoughts, our
                     dedicated team is here to assist you every step of the way.
-                    You can reach out to us through various channels: <br><br> 1.Email: Send us an email at
-                    support@estateguru.com <br><br>2.Phone: Give us a call at [Phone number] to
+                    You can reach out to us through various channels: <br><br> Send us an email at
+                    <a href="#">supportEstateguru@gmail.com</a><br><br>Give us a call at <a href='#'>+9232 2620690</a>
+                    to
                     speak directly with one of our customer support representatives. Our team is ready to assist you
-                    and provide guidance over the phone. <br><br>3.Online Support Portal: We have an online support
+                    and provide guidance over the phone. <br><br>Online Support Portal: We have an online support
                     portal
                     accessible through our website. You can browse through frequently asked questions (FAQs), knowledge
                     base articles, and user guides to find answers to common queries.<br><br>
-                    4.Social Media: Connect with us on our social media channels, such as Facebook, Twitter, or
-                    Instagram.
+
+                    Social Media: Connect with us on our social media channels, such as Facebook, whatsapp, Telegram.
                     You can send us direct messages or leave comments with your inquiries or concerns, and our social
                     media team will address them promptly.</p><br><br>
                 <p>
@@ -65,7 +66,7 @@
                 <h3>Contact Information</h3>
                 <ul class="contact-info">
                     <li><strong>Technical Support:</strong> +123456789</li>
-                    <li><strong>Customer Service:</strong> +987654321</li>
+                    <li><strong>Customer Support:</strong> +923322620690</li>
                 </ul>
                 <div class="social-icons">
                     <a href="https://www.whatsapp.com/" class="icon-link" target="_blank"><i
@@ -105,17 +106,32 @@
                     <a href="" class="btn btn-1">Contact</a>
                 </div>
                 <div class="col">
-                    <form action="">
+                    <form id="emailForm" action="">
                         <div>
-                            <input type="email" placeholder="Email Address">
-                            <a href="">Send</a>
+                            <input type="email" id="emailInput" placeholder="Email Address">
+                            <a href="" type="submit">Send</a>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
 
+        <script>
+            // Get the form element and attach an event listener to the form submission
+            const emailForm = document.getElementById('emailForm');
+            emailForm.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent form submission
 
+                // Get the value entered in the email input field
+                const emailInput = document.getElementById('emailInput').value;
+
+                // Check if the email address is entered
+                if (emailInput.trim() !== '') {
+                    // Show an alert box with the success message
+                    alert('YOUR Email Is Successfully Forwarded To supportEstateguru@gmail.com');
+                }
+            });
+        </script>
 
     </section>
 </body>

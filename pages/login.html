@@ -36,18 +36,20 @@
     <main class="main">
 
         <div class="container">
-            <h1 class="h1">Sign In</h1>
-            <form>
-                <label for="username">UserName:</label>
+            <h1 class="h1"></h1><br><br><br><br><br><br><br>
+            <form id="login-form">
+                <label for="username">Username:</label>
                 <input type="text" id="user-name" name="name" required>
 
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
                 <p>Don't have an account? <a href="signup.html">Signup</a></p><br>
 
-
-                <input type="submit" value="LogIn" id="login-button">
+                <input type="submit" value="Log In" id="login-button">
             </form>
+        </div>
+        <div id="result-box">
+            <h3 id="result"></h3>
         </div>
     </main>
 

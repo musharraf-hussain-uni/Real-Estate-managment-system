@@ -13,7 +13,6 @@ let bContainer = document.querySelector("#b-container");
 let allButtons = document.querySelectorAll(".submit");
 
 let getButtons = (e) => e.preventDefault()
-
 let changeForm = (e) => {
 
     switchCtn.classList.add("is-gx");
@@ -61,3 +60,32 @@ function handleLogin(event) {
     window.location.href = 'user-profile.html';
   }
 }
+
+// Get the form element and result box
+var loginForm = document.getElementById('login-form');
+var resultBox = document.getElementById('result-box');
+var result = document.getElementById('result');
+
+// Add form submit event listener
+loginForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Get the entered username and password
+  var username = document.getElementById('user-name').value;
+  var password = document.getElementById('password').value;
+
+  // Validate the username and password
+  if (username === 'your_username' && password === 'your_password') {
+    result.textContent = username + ' successfully logged in';
+    resultBox.style.color = 'green';
+  } else {
+    result.textContent = 'Sorry, we can\'t find your ID. Please register yourself first.';
+    resultBox.style.color = 'red';
+  }
+
+  // Clear the form fields
+  loginForm.reset();
+});
+
+
+

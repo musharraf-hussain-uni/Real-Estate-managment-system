@@ -66,3 +66,15 @@ function createPropertyCard(property) {
 // Initial filtering on page load
 filterProperties();
     
+
+
+// Get the "viewagent" button element
+var viewAgentButton = document.getElementById('viewagent');
+
+// Add click event listener to the button
+viewAgentButton.addEventListener('click', redirectToAgentsPage);
+
+// Function to redirect to the agents' page
+function redirectToAgentsPage() {
+  window.location.href = 'Agents.html';
+}
